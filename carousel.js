@@ -71,5 +71,6 @@
         }
     
         // Set the first slide as active
+        if(carouselInner.firstElementChild == null) return;
         carouselInner.firstElementChild.classList.add('active');
     }
