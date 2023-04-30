@@ -1,15 +1,16 @@
   // Get the carousel element
   var carousel = document.getElementById('carouselExampleIndicators');
+  console.log(carousel)
   // Get the carousel inner element where the images will be added
   var carouselInner = carousel.querySelector('.carousel-inner');
-
+    console.log(carouselInner)
   // Get the carousel indicators element where the bullets will be added
   var carouselIndicators = carousel.querySelector('.carousel-indicators');
 
     // Set the folder path where the images are stored
     var currentUrl = window.location.href;
     var folderPath = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
-
+    console.log(folderPath)
     // Create an array to store the image paths
     var imagesArray = [];
 
