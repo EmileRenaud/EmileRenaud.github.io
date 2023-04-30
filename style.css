@@ -86,9 +86,27 @@
 }
 
 
-.carousel-item img {
+/* .carousel-item img {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   margin: auto;
-  height: 600px;
-  width: 600px;
+  max-height: 600px;
+  max-width: 600px;
   object-fit: cover;
+} */
+
+.carousel-inner {
+  height: 500px;
+}
+.carousel-item img {
+  display: flex;
+  max-height: 500px;
+  max-width: 800px;
+  height: auto;
+  width: auto;
+  margin: auto;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 }
