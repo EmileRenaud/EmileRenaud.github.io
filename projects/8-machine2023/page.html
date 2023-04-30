@@ -4,12 +4,14 @@
   <title>Project XY</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
 </head>
 <body>
@@ -22,30 +24,57 @@
   <h1 class="text-center mb-5">Sherbrooke Machine for Engineering Games 2023</h1>
 
   <div class="row justify-content-center">
-    <div class="col-md-4">
-      <img src="cover.jpg" alt="CoverNema" width="300" height="300">
+    <div class="col-md-5">
+      <img src="cover.jpg" alt="CoverNema" width="450" height="300">
       <p class="text-center"><small>Overview Machine</small></p>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-7">
       <h2>Project Description</h2>
-      <p>This year challenge was to build a machine that can move across the island with the help of bridge that the machine need to place itself. It also need to connect the islands with a cable. For all the details
-        of the challenge, you can go <a href="https://jeuxdegenie.qc.ca/jdg/2023/wp-content/uploads/2022/09/Machine_Handbook.pdf">here</a>.</p>
+      <p>This year challenge was to build a machine that can move across the island with the help of bridge that the machine need to place itself. It also need to connect the islands with a cable. All the details of the competition
+        are <a href="https://jeuxdegenie.qc.ca/jdg/2023/wp-content/uploads/2022/09/Machine_Handbook.pdf">here</a>.</p>
       <p>Composed of 6 members in robotics and mechanical engineering, the <i>Team Machine</i> tried to make the best machine possible to complete this challenge. Even if our machine didn't perform as well as in the 
       trainning sessions, we still manage to beat all the others participant by a lot.</p>
     </div>
   </div>
   <H2>Electrical Section</H2>
-  <p>Here my cup of tea, electrical stuff. For another year, I was charge to design a custom PCB that please all the requirement of the mechanical team. That mean : control a lot of actuator on the smallest PCB possible...
-    That PCB can handle up to 6 DC motors including two of them with encoder feedback. It can also power up to 12 servos with differents voltages (5V and 7.4V). Two of my custom DC-DC are used to power the servos.
-    The motor's driver are setup with custom circuit that allow us to reset the power of the drive.</p>
+  <p>For second year in a row, I was in charge to design a custom PCB that please all the requirement of everyone. That mean : control a stupid amount of actuator on the smallest PCB possible...
+    The PCB can handle up to 6 DC motors including two of them with quadrature encoder feedback. It can also power up to 12 servos with differents voltages (5V and 7.4V). Two of my custom DC-DC are used to power the servos.
+    The motor's driver are setup with a custom circuit that allow us to reset the power of the drive.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="pcb.jpg" alt="PCB3D" width="400" height="300">
+        <p class="text-center"><small></small></p>
+      </div>
+      <div class="col-md-5">
+        <img src="pcbreal.jpg" alt="PCB3D2" width="350" height="300">
+        <p class="text-center"><small></small></p>
+      </div>
+    </div>
+
+    <div style="background-color: white; height: 50px;"></div>
+
+    <H2>Galerie</H2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="8000">
+      <ol class="carousel-indicators"></ol>
+      <div class="carousel-inner"></div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <script src="/carousel.js"></script>
 
   <div style="background-color: white; height: 100px;"></div>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/7-dcdc/page.html" style="text-decoration: none; color: black;">Previous</a></button>
+      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/9-boombox/page.html" style="text-decoration: none; color: black;">Previous</a></button>
     </div>
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/9-boombox/page.html" style="text-decoration: none; color: black;">Next</a></button>
+      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/7-dcdc/page.html" style="text-decoration: none; color: black;">Next</a></button>
     </div>
   </div>
   
