@@ -4,12 +4,14 @@
   <title>Project XY</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
 </head>
 <body>
@@ -19,14 +21,79 @@
     </nav>
 
 <div class="container mt-5">
-  <h1 class="text-center mb-5">NEMA17 Close loop Controller</h1>
+  <h1 class="text-center mb-5">Motor Controller</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <img src="cover.jpg" alt="CoverNema" width="400" height="300">
+      <p class="text-center"><small>Overview Machine</small></p>
+    </div>
+    <div class="col-md-7">
+      <h2>Project Description</h2>
+      <p>
+        I made a little motor controller for a friend's project. The main requirement was : 
+        <ul>
+          <li>Smallest</li>
+          <li>Control one motor on/off</li>
+          <li>Variable speed</li>
+          <li>Can handle high current</li>
+          <li>Powered by 3S lipo</li>	
+        </ul>	
+      </p>
+      <p>I used a small AtTiny85 because I can easily programme it in USB, small package and enough IO. A 7 amps continus mosfet is used to control the motor. And finally, a potentiometer to adjust the speed.</p>
+    </div>
+  </div>
+  <!-- <H2>History</H2>
+  <p>From left to right : V2.0 , V1.0, Classic LM2596 based DCDC </p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="history.jpg" alt="PCB3D" width="400" height="300">
+        <p class="text-center"><small></small></p>
+      </div>
+    </div> -->
+
+    <div style="background-color: white; height: 50px;"></div>
+
+    <H2>Galerie</H2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="cover.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pcb_top.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="3pcb.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pcb_bot.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="schematic.jpg"  alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  
+
+  <div style="background-color: white; height: 100px;"></div>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/index.html" style="text-decoration: none; color: black;">Previous</a></button>
+      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/7-dcdc/page.html" style="text-decoration: none; color: black;">Previous Project</a></button>
     </div>
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/projects2.html" style="text-decoration: none; color: black;">Next</a></button>
+      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/5-smartplug/page.html" style="text-decoration: none; color: black;">Next Project</a></button>
     </div>
   </div>
   
