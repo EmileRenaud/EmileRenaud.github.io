@@ -13,7 +13,7 @@
     var folderPath = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
     console.log(folderPath)
     // folderPath = "https://github.com/emilerenaud/emilerenaud.github.io/tree/main/projects/" + folderPath;
-    // console.log(folderPath)
+    console.log(folderPath)
     // Create an array to store the image paths
     var imagesArray = [];
 
