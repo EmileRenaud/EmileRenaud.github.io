@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -19,7 +19,7 @@
     </nav>
 
 <div class="container mt-5">
-  <h1 class="text-center mb-5">NEMA17 Close loop Controller</h1>
+  <h1 class="text-center mb-5" id="project-name">NEMA17 Close loop Controller</h1>
 
   <div class="row justify-content-center">
     <div class="col-md-4">
@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-8">
       <h2>Project Description</h2>
-      <p>It is a "simple" stepper motor driver that you can screw onto a NEMA17.</p>
+      <p id="project-description">It is a "simple" stepper motor driver that you can screw onto a NEMA17.</p>
       <p>Its main features: </p>
         <ul>
           <li>Swapable A4899 style Stepper Driver. (if you burn one, you can change it!)</li>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <H2>Future Upgrade</H2>
+  <h2>Future Upgrade</h2>
   <ul>
     <li>USB-C connector with PD</li>
     <li>Pinout for UART for smarter stepper driver like TMC</li>
@@ -52,7 +52,7 @@
   <div style="background-color: white; height: 50px;"></div>
 
   <!-- Carousel Section -->
-  <H2>Galerie</H2>
+  <h2>Galerie</h2>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
     <div class="carousel-inner" id="carousel-items">
       <!-- Carousel items will be dynamically loaded here -->
@@ -70,18 +70,39 @@
   <div style="background-color: white; height: 100px;"></div>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/index.html" style="text-decoration: none; color: black;">Previous Project</a></button>
+      <button type="button" class="btn btn-secondary btn-block" id="prev-button">
+        <a href="#" style="text-decoration: none; color: black;">Previous Project</a>
+      </button>
     </div>
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block"><a href="/projects/10-milling/page.html" style="text-decoration: none; color: black;">Next Project</a></button>
+      <button type="button" class="btn btn-secondary btn-block" id="next-button">
+        <a href="#" style="text-decoration: none; color: black;">Next Project</a>
+      </button>
     </div>
   </div>
   
 </div>
 
 <script>
-// Load image list from JSON file and populate carousel
-fetch('pictures.json')
+// Load project info from JSON file
+fetch('info.json')
+  .then(response => response.json())
+  .then(data => {
+    // Check if data is an array and access the first item
+    const projectInfo = Array.isArray(data) ? data[0] : data;
+    console.log(projectInfo);
+    // Update project name and description
+    document.getElementById('project-name').innerText = projectInfo.name;
+    console.log(data.name);
+    document.getElementById('project-description').innerText = projectInfo.description;
+
+    // Update navigation buttons with links from info.json
+    document.getElementById('prev-button').querySelector('a').href = projectInfo.prev;
+    document.getElementById('next-button').querySelector('a').href = projectInfo.next;
+
+    // Load image list from pictures.json for the carousel
+    return fetch('pictures.json');
+  })
   .then(response => response.json())
   .then(data => {
     const carouselInner = document.getElementById('carousel-items');
@@ -97,7 +118,7 @@ fetch('pictures.json')
       carouselInner.innerHTML += carouselItem;
     });
   })
-  .catch(error => console.error('Error loading images:', error));
+  .catch(error => console.error('Error loading data:', error));
 </script>
 
 </body>

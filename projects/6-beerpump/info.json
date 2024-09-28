@@ -1,0 +1,10 @@
+[
+  {
+    "name": "AtTiny85 Motor Controller",
+    "description": "AtTiny85 based motor controller",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/7-dcdc/page.html",
+    "next": "/projects/5-smartplug/page.html"
+  }
+]

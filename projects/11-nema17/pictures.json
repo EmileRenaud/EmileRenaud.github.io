@@ -1,10 +1,9 @@
 {
-    "images": [
-      "cover.jpg",
-      "withStepper.jpg",
-      "back.jpg",
-      "schematic.jpg",
-      "pcb_bot.jpg"
-    ]
-  }
-  
+  "images": [
+    "back.jpg",
+    "cover.jpg",
+    "pcb_bot.jpg",
+    "schematic.jpg",
+    "withStepper.jpg"
+  ]
+}

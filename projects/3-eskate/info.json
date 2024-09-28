@@ -1,0 +1,10 @@
+[
+  {
+    "name": "ESkate",
+    "description": "Electric Skateboard",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/4-domotique/page.html",
+    "next": "/projects/2-ledcube/page.html"
+  }
+]

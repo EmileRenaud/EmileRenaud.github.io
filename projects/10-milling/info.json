@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Milling Machine",
+    "description": "Conventional Milling Machine for machining aluminium",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/11-nema17/page.html",
+    "next": "/projects/9-boombox/page.html"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Smart House",
+    "description": "Smart House with Home Assistant",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/5-smartplug/page.html",
+    "next": "/projects/3-eskate/page.html"
+  }
+]

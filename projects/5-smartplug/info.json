@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Smart Outlet",
+    "description": "Smart Outlet for Home Assistant",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/6-beerpump/page.html",
+    "next": "/projects/4-domotique/page.html"
+  }
+]

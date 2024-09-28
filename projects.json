@@ -1,0 +1,92 @@
+{
+  "projects": [
+    {
+      "name": "Nema 17 Controller",
+      "description": "Closed loop controller for NEMA17",
+      "image": "projects/11-nema17/cover.jpg",
+      "link": "projects/11-nema17/page.html",
+      "prev": "/index.html",
+      "next": "projects/10-milling/page.html"
+    },
+    {
+      "name": "Milling Machine",
+      "description": "Conventional Milling Machine for machining aluminium",
+      "image": "projects/10-milling/cover.jpg",
+      "link": "projects/10-milling/page.html",
+      "prev": "projects/11-nema17/page.html",
+      "next": "projects/9-boombox/page.html"
+    },
+    {
+      "name": "Boombox",
+      "description": "A loud portable speaker",
+      "image": "projects/9-boombox/cover.jpg",
+      "link": "projects/9-boombox/page.html",
+      "prev": "projects/10-milling/page.html",
+      "next": "projects/8-machine2023/page.html"
+    },
+    {
+      "name": "Sherbrooke Machine",
+      "description": "2023 Sherbrooke Engineering Games Machine",
+      "image": "projects/8-machine2023/cover.jpg",
+      "link": "projects/8-machine2023/page.html",
+      "prev": "projects/9-boombox/page.html",
+      "next": "projects/7-dcdc/page.html"
+    },
+    {
+      "name": "DCDC 4A",
+      "description": "4A DCDC",
+      "image": "projects/7-dcdc/cover.jpg",
+      "link": "projects/7-dcdc/page.html",
+      "prev": "projects/8-machine2023/page.html",
+      "next": "projects/6-beerpump/page.html"
+    },
+    {
+      "name": "AtTiny85 Motor Controller",
+      "description": "AtTiny85 based motor controller",
+      "image": "projects/6-beerpump/cover.jpg",
+      "link": "projects/6-beerpump/page.html",
+      "prev": "projects/7-dcdc/page.html",
+      "next": "projects/5-smartplug/page.html"
+    },
+    {
+      "name": "Smart Outlet",
+      "description": "Smart Outlet for Home Assistant",
+      "image": "projects/5-smartplug/cover.jpg",
+      "link": "projects/5-smartplug/page.html",
+      "prev": "projects/6-beerpump/page.html",
+      "next": "projects/4-domotique/page.html"
+    },
+    {
+      "name": "Smart House",
+      "description": "Smart House with Home Assistant",
+      "image": "projects/4-domotique/cover.jpg",
+      "link": "projects/4-domotique/page.html",
+      "prev": "projects/5-smartplug/page.html",
+      "next": "projects/3-eskate/page.html"
+    },
+    {
+      "name": "ESkate",
+      "description": "Electric Skateboard",
+      "image": "projects/3-eskate/cover.jpg",
+      "link": "projects/3-eskate/page.html",
+      "prev": "projects/4-domotique/page.html",
+      "next": "projects/2-ledcube/page.html"
+    },
+    {
+      "name": "LED Cube",
+      "description": "LED Infinity Cube",
+      "image": "projects/2-ledcube/cover.jpg",
+      "link": "projects/2-ledcube/page.html",
+      "prev": "projects/3-eskate/page.html",
+      "next": "projects/1-ledmatrix/page.html"
+    },
+    {
+      "name": "LED Matrix",
+      "description": "LED Matrix Screen with 64x32 P3 RGB LED",
+      "image": "projects/1-ledmatrix/cover.jpg",
+      "link": "projects/1-ledmatrix/page.html",
+      "prev": "projects/2-ledcube/page.html",
+      "next": "/index.html"
+    }
+  ]
+}

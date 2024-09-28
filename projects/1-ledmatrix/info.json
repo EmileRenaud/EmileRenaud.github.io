@@ -1,0 +1,10 @@
+[
+  {
+    "name": "LED Matrix",
+    "description": "LED Matrix Screen with 64x32 P3 RGB LED",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/2-ledcube/page.html",
+    "next": "/index.html"
+  }
+]

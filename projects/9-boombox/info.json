@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Boombox",
+    "description": "A loud portable speaker",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/10-milling/page.html",
+    "next": "/projects/8-machine2023/page.html"
+  }
+]

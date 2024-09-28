@@ -1,0 +1,10 @@
+[
+  {
+    "name": "LED Cube",
+    "description": "LED Infinity Cube",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/3-eskate/page.html",
+    "next": "/projects/1-ledmatrix/page.html"
+  }
+]

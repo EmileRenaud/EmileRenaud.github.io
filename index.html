@@ -1,101 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Emile's Projects</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" href="style.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      
-      </head>
+<html lang="en">
+<head>
+    <title>Emile's Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
 <body>
     <nav class="navbar navbar-custom">
         <a class="navbar-brand" href="/index.html">Emile's Projects</a>
     </nav>
 
-	<!-- <h1 class="navbar-custom">Emile's Projects</h1> -->
-	<div class="grid-container">
-		<div class="grid-item text-center">
-			<img src="projects/11-nema17/cover.jpg" alt="Nema 17 Controller" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Nema 17 Controller</h2>
-					<p>Closed loop controller for NEMA17</p>
-					<button><a href="projects/11-nema17/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
+    <!-- Grid container for projects -->
+    <div class="grid-container" id="project-grid">
+        <!-- Dynamic project items will be inserted here -->
+    </div>
 
-        <div class="grid-item">
-			<img src="projects/10-milling/cover.jpg" alt="MillingCover" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Milling Machine</h2>
-					<p>Conventional Milling Machine for machining aluminium</p>
-					<button><a href="projects/10-milling/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
+    <script>
+        // Load the project data from projects.json
+        fetch('/projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectGrid = document.getElementById('project-grid');
 
-        <div class="grid-item">
-			<img src="projects/9-boombox/cover.jpg" alt="boomboxCover" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Boombox</h2>
-					<p>A loud portable speaker</p>
-					<button><a href="projects/9-boombox/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
+            // Loop through each project and create the HTML structure dynamically
+            data.projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.classList.add('grid-item');
+                
+                const projectImage = document.createElement('img');
+                projectImage.src = project.image;
+                projectImage.alt = project.name;
+                projectImage.width = 300;
+                projectImage.height = 300;
+                
+                const overlayDiv = document.createElement('div');
+                overlayDiv.classList.add('overlay');
+                
+                const textDiv = document.createElement('div');
+                textDiv.classList.add('text');
+                
+                const projectTitle = document.createElement('h2');
+                projectTitle.textContent = project.name;
+                
+                const projectDescription = document.createElement('p');
+                projectDescription.textContent = project.description;
+                
+                const projectButton = document.createElement('button');
+                const projectLink = document.createElement('a');
+                projectLink.href = project.link;
+                projectLink.textContent = 'Learn More';
+                projectLink.style.textDecoration = 'none';
+                projectLink.style.color = 'black';
+                
+                projectButton.appendChild(projectLink);
+                textDiv.appendChild(projectTitle);
+                textDiv.appendChild(projectDescription);
+                textDiv.appendChild(projectButton);
+                overlayDiv.appendChild(textDiv);
+                projectDiv.appendChild(projectImage);
+                projectDiv.appendChild(overlayDiv);
+                projectGrid.appendChild(projectDiv);
+            });
+        });
+    </script>
 
-        <div class="grid-item">
-			<img src="projects/8-machine2023/cover.jpg" alt="machineCover" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Sherbrooke Machine</h2>
-					<p>Sherbrooke Machine for the Engineering Games 2023</p>
-					<button><a href="projects/8-machine2023/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
-
-        <div class="grid-item">
-			<img src="projects/7-dcdc/cover.jpg" alt="dcdcCover" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>4A DCDC</h2>
-					<p>Small form factor DCDC</p>
-					<button><a href="projects/7-dcdc/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
-
-        <div class="grid-item">
-			<img src="projects/6-beerpump/cover.jpg" alt="MotorControl" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Motor Controller</h2>
-					<p>AtTiny85 based motor controller</p>
-					<button><a href="projects/6-beerpump/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
-
-        <div class="grid-item">
-			<img src="" alt="ComingSoon" width="300" height="300">
-			<div class="overlay">
-				<div class="text">
-					<h2>Coming soon</h2>
-					<p>N/A</p>
-					<button><a href="projects/7-dcdc/page.html" style="text-decoration: none; color: black;">Learn More</a></button>
-				</div>
-			</div>
-		</div>
-
-	</div>
 </body>
 </html>

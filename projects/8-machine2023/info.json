@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Sherbrooke Machine",
+    "description": "2023 Sherbrooke Engineering Games Machine",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/9-boombox/page.html",
+    "next": "/projects/7-dcdc/page.html"
+  }
+]

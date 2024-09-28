@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Nema 17 Controller",
+    "description": "Closed loop controller for NEMA17",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/index.html",
+    "next": "/projects/10-milling/page.html"
+  }
+]

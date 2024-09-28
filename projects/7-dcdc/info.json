@@ -1,0 +1,10 @@
+[
+  {
+    "name": "DCDC 4A",
+    "description": "4A DCDC",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/8-machine2023/page.html",
+    "next": "/projects/6-beerpump/page.html"
+  }
+]
