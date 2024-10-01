@@ -1,11 +1,27 @@
 {
   "projects": [
     {
+      "name": "10A DCDC",
+      "description": "Small 10A DCDC converter",
+      "image": "projects/13-10Adcdc/cover.jpg",
+      "link": "projects/13-10Adcdc/page.html",
+      "prev": "/index.html",
+      "next": "projects/12-usbPD/page.html"
+    },
+    {
+      "name": "USB Power Delivery",
+      "description": "USB PD breakout board with CH244K IC",
+      "image": "projects/12-usbPD/cover.jpg",
+      "link": "projects/12-usbPD/page.html",
+      "prev": "projects/13-10Adcdc/page.html",
+      "next": "projects/11-nema17/page.html"
+    },
+    {
       "name": "Nema 17 Controller",
       "description": "Closed loop controller for NEMA17",
       "image": "projects/11-nema17/cover.jpg",
       "link": "projects/11-nema17/page.html",
-      "prev": "/index.html",
+      "prev": "projects/12-usbPD/page.html",
       "next": "projects/10-milling/page.html"
     },
     {

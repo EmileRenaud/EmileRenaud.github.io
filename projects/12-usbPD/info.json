@@ -1,0 +1,10 @@
+[
+  {
+    "name": "USB Power Delivery",
+    "description": "USB PD breakout board with CH244K IC",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/projects/13-10Adcdc/page.html",
+    "next": "/projects/11-nema17/page.html"
+  }
+]

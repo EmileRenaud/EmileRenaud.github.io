@@ -1,0 +1,10 @@
+[
+  {
+    "name": "10A DCDC",
+    "description": "Small 10A DCDC converter",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/index.html",
+    "next": "/projects/12-usbPD/page.html"
+  }
+]
