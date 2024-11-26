@@ -29,6 +29,36 @@
     <div class="col-md-8">
       <h2>Project Description</h2>
       <p id="project-description">Project description</p>
+
+      <p>.
+        <ul>
+          <li><strong>Ports and PoE:</strong>
+            <ul>
+              <li>4x PoE (Power over Ethernet) ports supporting 12V.</li>
+              <li>1x PoE port supporting 12V/24V.</li>
+              <li>PoE ports are <strong>controllable via CAN bus</strong> for dynamic power management.</li>
+            </ul>
+          </li>
+          <li><strong>Scalability:</strong>
+            <ul>
+              <li>Built on the <strong>KSZ8567 IC</strong>, the design allows for stacking an additional PCB to expand to a <strong>10-port switch</strong>.</li>
+            </ul>
+          </li>
+          <li><strong>Power Input:</strong>
+            <ul>
+              <li>Supports up to <strong>24V raw power input</strong>, offering flexibility for integration with various power sources.</li>
+            </ul>
+          </li>
+          <li><strong>Integrated ESP32-S3:</strong>
+            <ul>
+              <li>A built-in <strong>ESP32-S3</strong> enables advanced switch configuration and PoE control through a user-friendly interface.</li>
+            </ul>
+          </li>
+        </ul>
+      </p> 
+
+      
+      
     </div>
   </div>
 
@@ -58,7 +88,7 @@
       </button>
     </div>
     <div class="col-md-6">
-      <button type="button" class="btn btn-secondary btn-block text-button" id="next-button">
+      <button type="button" class="btn btn-block text-button" id="next-button">
         <a href="#" class="text-button">Previous Project</a>
       </button>
     </div>
@@ -83,8 +113,7 @@ fetch('info.json')
     // Update navigation buttons with links from info.json
     document.getElementById('prev-button').querySelector('a').href = projectInfo.prev;
     document.getElementById('next-button').querySelector('a').href = projectInfo.next;
-    console.log(projectInfo.prev);
-    console.log(projectInfo.next);
+
     // Load image list from pictures.json for the carousel
     return fetch('pictures.json');
   })

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Ethernet Switch",
+    "description": "5Ports Ethernet Switch + PoE",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/index.html",
+    "next": "/projects/13-10Adcdc/page.html"
+  }
+]

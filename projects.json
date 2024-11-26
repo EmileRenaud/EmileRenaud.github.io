@@ -1,11 +1,19 @@
 {
   "projects": [
     {
+      "name": "Ethernet Switch",
+      "description": "5Ports Ethernet Switch + PoE",
+      "image": "projects/14-EthernetSwitch/cover.jpg",
+      "link": "projects/14-EthernetSwitch/page.html",
+      "prev": "/index.html",
+      "next": "projects/13-10Adcdc/page.html"
+    },
+    {
       "name": "10A DCDC",
       "description": "Small 10A DCDC converter",
       "image": "projects/13-10Adcdc/cover.jpg",
       "link": "projects/13-10Adcdc/page.html",
-      "prev": "/index.html",
+      "prev": "projects/14-EthernetSwitch/page.html",
       "next": "projects/12-usbPD/page.html"
     },
     {
