@@ -1,0 +1,10 @@
+[
+  {
+    "name": "UR Gripper Controller",
+    "description": "Custom gripper controller for UR5 robot arm",
+    "image": "cover.jpg",
+    "link": "page.html",
+    "prev": "/index.html",
+    "next": "/projects/14-EthernetSwitch/page.html"
+  }
+]

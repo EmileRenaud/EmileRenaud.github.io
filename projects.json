@@ -1,11 +1,19 @@
 {
   "projects": [
     {
+      "name": "UR Gripper Controller",
+      "description": "Custom gripper controller for UR5 robot arm",
+      "image": "projects/15-GripperTony/cover.jpg",
+      "link": "projects/15-GripperTony/page.html",
+      "prev": "/index.html",
+      "next": "projects/14-EthernetSwitch/page.html"
+    },
+    {
       "name": "Ethernet Switch",
       "description": "5Ports Ethernet Switch + PoE",
       "image": "projects/14-EthernetSwitch/cover.jpg",
       "link": "projects/14-EthernetSwitch/page.html",
-      "prev": "/index.html",
+      "prev": "projects/15-GripperTony/page.html",
       "next": "projects/13-10Adcdc/page.html"
     },
     {
